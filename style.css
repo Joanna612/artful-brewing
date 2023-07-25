@@ -1,0 +1,172 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    color: #f0f0f0;
+    background-color: #1c1b1b;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+main {
+    height: 100vh;
+    display: flex;
+    flex: 1;
+}
+
+h1 {
+    margin-bottom: 1rem;
+    font-weight: bolder;
+    font-size: 3.25rem;
+    line-height: 4.7rem;
+}
+
+h2 {
+    margin: 0;
+}
+
+.logo {
+    text-align: center;
+    font-family: 'EB Garamond', serif;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 6rem;
+    font-weight: 400;
+    line-height: .8;
+    color: #1C1B1B;
+}
+
+.logo p {
+    margin: 0;
+    font-weight: 700;
+    font-size: 2rem;
+    color: #1C1B1B;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    flex: 5;
+    align-items: center;
+    justify-content: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    font-weight: light;
+}
+
+form input {
+    width: auto;
+    margin-top: 1rem;
+    padding: 0.75rem;
+    border-radius: 0.35rem;
+    border: 0;
+}
+
+form button {
+    margin-top: 1rem;
+    width: 40%;
+    padding: 0.75rem;
+    background-color: #e77b50;
+    color: #fff;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 0.35rem;
+    transition: background-color 0.5s;
+}
+
+button:hover {
+    background-color: #eb8357;
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 3;
+    width: 100%;
+    background-image: url("./images/bg-500px.png");
+    background-color: #cccccc;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.social-media img {
+    margin: 2rem 0rem;
+    margin-right: 0.8rem;
+    width: 2.5rem;
+}
+
+a:hover {
+    opacity: 0.9;
+}
+
+footer {
+    flex: 1;
+    padding: 1rem;
+    background-color: #000;
+    text-align: center;
+    font-size: 0.8rem;
+}
+
+@media (max-width: 600px) {
+    main {
+        flex-direction: column;
+    }
+
+    h1 {
+        font-size: 2rem;
+        line-height: 1rem;
+    }
+
+    .image-container {
+        height: 200px;
+    }
+
+    .logo {
+        padding: 1.5rem;
+    }
+
+    .logo h2 {
+        font-size: 3rem;
+    }
+
+    .logo p {
+        font-size: 1rem;
+    }
+
+    .form-container {
+        padding: 3rem 1rem;
+        justify-content: start;
+    }
+
+    form {
+        width: 96%;
+    }
+
+    form input {
+        margin-top: 1rem;
+    }
+
+    .social-media {
+        margin-bottom: 2rem;
+    }
+
+    .social-media img {
+        margin-right: 0.5rem;
+        width: 1.7rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .form-container {
+        width: 85%;
+    }
+
+    form button {
+        width: 80%;
+    }
+}
